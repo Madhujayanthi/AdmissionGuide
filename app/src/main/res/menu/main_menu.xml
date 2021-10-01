@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+
+      <item
+          android:id="@+id/home"
+          android:title="Home"
+          android:icon="@drawable/home"/>
+
+      <item
+          android:id="@+id/about"
+          android:title="About"
+          android:icon="@drawable/about"/>
+
+      <item
+          android:id="@+id/department"
+          android:title="Department"
+          android:icon="@drawable/department"/>
+
+      <item
+          android:id="@+id/accomodations"
+          android:title="Accomodation"
+          android:icon="@drawable/acco"/>
+
+      <item
+          android:id="@+id/academics"
+          android:title="Academics"
+          android:icon="@drawable/academics"/>
+
+      <item
+          android:id="@+id/admission"
+          android:title="Admission"
+          android:icon="@drawable/admission"/>
+
+      <item
+          android:id="@+id/coe"
+          android:title="COE"
+          android:icon="@drawable/coe"/>
+
+      <item
+          android:id="@+id/placement"
+          android:title="Placement"
+          android:icon="@drawable/placement"/>
+      <item
+          android:id="@+id/alumni"
+          android:title="Alumni"
+          android:icon="@drawable/alumni"/>
+
+      <item
+          android:id="@+id/library"
+          android:title="Library"
+          android:icon="@drawable/library"/>
+
+      <item
+          android:id="@+id/sports"
+          android:title="Sports"
+          android:icon="@drawable/sports"/>
+
+      <item
+          android:id="@+id/research"
+          android:title="Research"
+          android:icon="@drawable/research"/>
+
+      <item
+          android:id="@+id/facilities"
+          android:title="Facilities"
+          android:icon="@drawable/facilities"/>
+
+      <item
+          android:id="@+id/contact"
+          android:title="Contact"
+          android:icon="@drawable/contact"/>
+
+      <item
+          android:id="@+id/login"
+          android:title="Login"
+          android:icon="@drawable/login"/>
+
+
+
+  </group>
+
+        <item android:title="Communicate">
+
+            <menu>
+                <item
+                    android:id="@+id/share"
+                    android:title="Share"
+                    android:icon="@drawable/share"/>
+                <item
+                    android:id="@+id/rate"
+                    android:title="Rate Us"
+                    android:icon="@drawable/rate"/>
+
+
+
+
+
+
+            </menu>
+
+
+
+
+        </item>
+
+
+
+
+
+
+
+</menu>
