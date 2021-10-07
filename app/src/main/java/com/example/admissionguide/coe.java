@@ -8,21 +8,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class coe extends AppCompatActivity {
+    TextView b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coe);
         TextView mTitleWindow = (TextView) findViewById(R.id.titleWindow);
-        TextView mMessageWindowWindow = (TextView) findViewById(R.id.messageWindow);
+        b = findViewById(R.id.messageWindow);
         ImageView mImageView = (ImageView) findViewById(R.id.imageWindow) ;
 
 
 
-        StringBuilder stringBuilder = new StringBuilder();
-        String someMessage = " The Office of the Controller of Examinations shall be responsible for assessing continuous learning process of the students by maintaining best quality and standard in examination process and ensuring confidentiality. It is the duty of the office of the Controller of Examinations to arrange, prepare, schedule, conduct, publish and maintain records of CIE and Semester End Examinations of the students of all UG, PG and Ph.D programmes.\n" +
+        StringBuilder mess = new StringBuilder();
+        String Message = " The Office of the Controller of Examinations shall be responsible for assessing continuous learning process of the students by maintaining best quality and standard in examination process and ensuring confidentiality. It is the duty of the office of the Controller of Examinations to arrange, prepare, schedule, conduct, publish and maintain records of CIE and Semester End Examinations of the students of all UG, PG and Ph.D programmes.\n" +
                 "\n" +
-                "The other responsibilities of the office are:\n" + "\n" +
                 " 1)Collection of student bio data from the students and Mapping Electives from the students for the current semester.\n" + "\n" +
                 " 2) Conducting CIE test for the students of various UG/PG Programmes.\n" + "\n" +
                 " 3) Preparation of exam schedule, Hall allocation and Seating arrangements for Continuous Internal Evaluation Test (CIE).\n" + "\n" +
@@ -45,9 +45,9 @@ public class coe extends AppCompatActivity {
                 " 20) Conduction of graduation day and issuing degree certificate.\n" + "\n" +
                 " 21) Assisting in student background verification.\n" +"\n" + "\n" +
                 " please goto https://www.sonatech.ac.in/coe/ for more information about controller of examinations";
-        stringBuilder.append(someMessage);
+        mess.append(Message);
 
-        mMessageWindowWindow.setText(stringBuilder.toString());
+        b.setText(mess.toString());
 
     }
 }
