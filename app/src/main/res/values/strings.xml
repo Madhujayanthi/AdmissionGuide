@@ -6,7 +6,18 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="text">COE INFORMATION</string>
-
     <string name="admiss">ADMISSION DETAILS</string>
+    <string name="admissiondet">
+
+                FOR MORE DETAILS CONTACT:
+
+                Admission Cell
+                Sona College of Technology
+                Salem – 636 005
+                TamilNadu.
+                0427 - 4099998 / 9442668758 / 9840447392 / +91 9442668758 /  admission@sonatech.ac.in
+
+
+    </string>
 
 </resources>
