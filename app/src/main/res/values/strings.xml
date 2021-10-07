@@ -6,7 +6,6 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-
     <string name="about_college">Sona College of Technology (Autonomous) is a private college in India located in Salem, Tamilnadu, India. It was established in 1997 by Thiru. M.S. Chockalingam (Founder Chairman) and gained autonomous status in 2012. It is National Board of Accreditation (NBA) accredited, ISO certified and Accredited "A" Grade by National Assessment and Accreditation Council (NAAC). The college affiliated with Anna University and approved by the All India Council for Technical Education (AICTE) of the government of India</string>
     <string name="link_to_college_website"><a href="https://www.sonatech.ac.in/">website: www.sonatech.ac.in</a></string>
     <string name="link_to_alumni"><a href="https://www.sonatptalumni.org/">click to view more about alumni</a></string>
@@ -25,6 +24,4 @@
 
 
     </string>
-
-
 </resources>

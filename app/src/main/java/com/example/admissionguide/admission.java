@@ -7,14 +7,16 @@ import android.widget.TextView;
 
 public class admission extends AppCompatActivity {
 
+    TextView admission;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admission);
-        TextView mMessageWindowWindow = (TextView) findViewById(R.id.admission_text2);
-        StringBuilder stringBuilder = new StringBuilder();
-        String someMessage = "Admission Criteria\n" +
-                "\n" +
+
+        admission= findViewById(R.id.admission_text2);
+        StringBuilder admission_string = new StringBuilder();
+        String someMessage ="\n"+
                 "i) Selection Procedure\n" +
                 "\n" +
                 "The selection committee constituted by Sona College of Technology as per the guidelines of the Institution will do selection of the candidates under this scheme. The selection is purely provisional and always subject to the confirmation from the Anna University / Directorate of Technical Education, Chennai.\n" +
@@ -44,18 +46,10 @@ public class admission extends AppCompatActivity {
                 "Based on the entrance (MAT / TANCET / CET) marks conducted by the Anna University & Association of Management of Coimbatore Anna University Affiliated Colleges\n" +
                 "Master of Computer Application (MCA) Degree\n" +
                 "\n" +
-                "Based on the entrance (TANCET / CET) marks conducted by the Anna University & Association of Management of Coimbatore Anna University Affiliated Colleges\n" +
-                "\n" +
-                "FOR MORE DETAILS CONTACT:\n" +
-                "\n" +
-                "Admission Cell\n" +
-                "Sona College of Technology\n" +
-                "Salem – 636 005\n" +
-                "Tamilnadu.\n" +
-                "0427 - 4099998 / 9442668758 / 9840447392 / +91 9442668758 /  admission@sonatech.ac.in\n";
+                "Based on the entrance (TANCET / CET) marks conducted by the Anna University & Association of Management of Coimbatore Anna University Affiliated Colleges.";
 
-        stringBuilder.append(someMessage);
+        admission_string.append(someMessage);
 
-        mMessageWindowWindow.setText(stringBuilder.toString());
+        admission.setText(admission_string.toString());
     }
 }

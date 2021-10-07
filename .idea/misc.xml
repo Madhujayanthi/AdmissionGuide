@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/drawable/about.xml" value="0.14629629629629629" />
         <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/drawable/explore.xml" value="0.1" />
         <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/drawable/ic_icons8_menu.xml" value="0.1574074074074074" />
         <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_about.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_academics.xml" value="0.10144927536231885" />
+        <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_admission.xml" value="0.1" />
         <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_alumni.xml" value="0.12409420289855072" />
-        <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_navigation.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_coe.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_contact.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_department.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_navigation.xml" value="0.1" />
         <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/activity_sports.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/header.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/SONA COLLEGE/AndroidStudioProjects/AdmissionGuide/app/src/main/res/layout/slider_item.xml" value="0.1490036231884058" />

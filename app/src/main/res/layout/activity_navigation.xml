@@ -11,9 +11,9 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation"
-        android:layout_gravity="start"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_gravity="start"
         app:headerLayout="@layout/header"
         app:menu="@menu/main_menu" />
 
@@ -37,14 +37,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:navigationIcon="@drawable/ic_icons8_menu" />
+
             <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/image_slider"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:paddingTop="5dp"
-                android:id="@+id/image_slider"
-                app:sliderAnimationDuration ="600"
-                app:sliderAutoCycleEnabled ="true"
+                app:sliderAnimationDuration="600"
                 app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
                 app:sliderIndicatorAnimationDuration="500"
                 app:sliderIndicatorGravity="center_horizontal|bottom"
                 app:sliderIndicatorMargin="15dp"
@@ -54,289 +55,635 @@
                 app:sliderIndicatorSelectedColor="#5A5A5A"
                 app:sliderIndicatorUnselectedColor="#FFF"
                 app:sliderScrollTimeInSec="2"
-                app:sliderStartAutoCycle="true"
-                />
+                app:sliderStartAutoCycle="true" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sona College of Technology"
-                android:layout_marginTop="36dp"
-                android:textSize="@dimen/text_size"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="bold"
-                android:textColor="@color/black"/>
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/acme"
+                android:text="Sona College of Technology"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/about_college"
-                android:layout_marginTop="@dimen/text_size"
-                android:textSize="@dimen/text_size"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/text_margin"
                 android:layout_marginHorizontal="@dimen/text_margin"
-                android:fontFamily="sans-serif-condensed-light"
-                android:textColor="@color/black"/>
+                android:layout_marginTop="@dimen/text_size"
+                android:fontFamily="@font/alice"
+                android:text="@string/about_college"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:background="#9E000000">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:layout_marginTop="36dp"
                     android:layout_marginBottom="10dp"
-                    >
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Departments"
-                        android:layout_marginTop="24dp"
-                        android:textSize="@dimen/text_size"
                         android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
                         android:fontFamily="bold"
-                        android:textColor="@color/white"/>
+                        android:text="Departments"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size" />
+
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
                         android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
 
                         >
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
+                            android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/text_margin"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_size"
+                                android:fontFamily="sans-serif-condensed-light"
                                 android:text="Mechanical"
-                                android:layout_marginTop="@dimen/text_size"
-                                android:textSize="@dimen/text_size"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_margin="@dimen/text_margin"
-                                android:layout_marginHorizontal="@dimen/text_margin"
-                                android:fontFamily="sans-serif-condensed-light"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size" />
+
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:background="#5E5858"/>
+                                android:background="#5E5858" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/text_margin"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_size"
+                                android:fontFamily="sans-serif-condensed-light"
                                 android:text="Mechatronics"
-                                android:layout_marginTop="@dimen/text_size"
-                                android:textSize="@dimen/text_size"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_margin="@dimen/text_margin"
-                                android:layout_marginHorizontal="@dimen/text_margin"
-                                android:fontFamily="sans-serif-condensed-light"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size" />
+
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:background="#5E5858"/>
+                                android:background="#5E5858" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/text_margin"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_size"
+                                android:fontFamily="sans-serif-condensed-light"
                                 android:text="Electrical &amp; Electronics"
-                                android:layout_marginTop="@dimen/text_size"
-                                android:textSize="@dimen/text_size"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_margin="@dimen/text_margin"
-                                android:layout_marginHorizontal="@dimen/text_margin"
-                                android:fontFamily="sans-serif-condensed-light"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size" />
+
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:background="#5E5858"/>
+                                android:background="#5E5858" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/text_margin"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_size"
+                                android:fontFamily="sans-serif-condensed-light"
                                 android:text="Electronics &amp; Communication"
-                                android:layout_marginTop="@dimen/text_size"
-                                android:textSize="@dimen/text_size"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_margin="@dimen/text_margin"
-                                android:layout_marginHorizontal="@dimen/text_margin"
-                                android:fontFamily="sans-serif-condensed-light"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size" />
+
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:background="#5E5858"/>
+                                android:background="#5E5858" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/text_margin"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_size"
+                                android:fontFamily="sans-serif-condensed-light"
                                 android:text="Bio Medical"
-                                android:layout_marginTop="@dimen/text_size"
-                                android:textSize="@dimen/text_size"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_margin="@dimen/text_margin"
-                                android:layout_marginHorizontal="@dimen/text_margin"
-                                android:fontFamily="sans-serif-condensed-light"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size" />
+
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:background="#5E5858"/>
+                                android:background="#5E5858" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/text_margin"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_size"
+                                android:fontFamily="sans-serif-condensed-light"
                                 android:text="Computer Science"
-                                android:layout_marginTop="@dimen/text_size"
-                                android:textSize="@dimen/text_size"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_margin="@dimen/text_margin"
-                                android:layout_marginHorizontal="@dimen/text_margin"
-                                android:fontFamily="sans-serif-condensed-light"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size" />
+
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:background="#5E5858"/>
+                                android:background="#5E5858" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/text_margin"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_size"
+                                android:fontFamily="sans-serif-condensed-light"
                                 android:text="Information"
-                                android:layout_marginTop="@dimen/text_size"
-                                android:textSize="@dimen/text_size"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_margin="@dimen/text_margin"
-                                android:layout_marginHorizontal="@dimen/text_margin"
-                                android:fontFamily="sans-serif-condensed-light"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size" />
+
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:background="#5E5858"/>
+                                android:background="#5E5858" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/text_margin"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_size"
+                                android:fontFamily="sans-serif-condensed-light"
                                 android:text="Civil"
-                                android:layout_marginTop="@dimen/text_size"
-                                android:textSize="@dimen/text_size"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_margin="@dimen/text_margin"
-                                android:layout_marginHorizontal="@dimen/text_margin"
-                                android:fontFamily="sans-serif-condensed-light"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size" />
+
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:background="#5E5858"/>
+                                android:background="#5E5858" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Fashion Technology"
-                                android:layout_marginTop="@dimen/text_size"
-                                android:textSize="@dimen/text_size"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_margin="@dimen/text_margin"
                                 android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_size"
                                 android:fontFamily="sans-serif-condensed-light"
-                                android:textColor="@color/black"/>
+                                android:text="Fashion Technology"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size" />
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
 
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="10dp"
-                >
+                android:padding="10dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contact Details"
-                    android:layout_marginTop="5dp"
-                    android:textSize="22sp"
                     android:layout_margin="10dp"
                     android:layout_marginHorizontal="@dimen/text_margin"
-                    android:fontFamily="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
                     android:layout_marginTop="5dp"
-                    android:textSize="@dimen/text_size"
-                    android:layout_marginHorizontal="@dimen/text_margin"
-                    android:fontFamily="sans-serif-condensed-light"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/text_size"
-                    android:id="@+id/ph"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginHorizontal="@dimen/text_margin"
-                    android:fontFamily="sans-serif-condensed-light"
+                    android:fontFamily="bold"
+                    android:text="Contact Details"
                     android:textColor="@color/black"
-                    android:text="ph: 04274099999"
-                    android:layout_marginTop="2dp"
+                    android:textSize="22sp" />
 
-                   />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/text_size"
-                    android:id="@+id/website"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
                     android:layout_marginHorizontal="@dimen/text_margin"
-                    android:fontFamily="sans-serif-condensed-light"
-                    android:textColor="#033FD6"
-                    android:text="@string/link_to_college_website"
-
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/text_size"
-                    android:id="@+id/emailid"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginHorizontal="@dimen/text_margin"
-                    android:fontFamily="sans-serif-condensed-light"
-                    android:textColor="#033FD6"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="click to see location"
+                    android:fontFamily="@font/alice"
+                    android:text="@string/app_name"
                     android:textColor="@color/black"
-                    android:textSize="12sp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginTop="35dp"/>
-                <ImageView
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="230dp"
-                    android:id="@+id/map"
-                    android:src="@drawable/img"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/text_margin"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
                     android:layout_marginRight="10dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
+                    android:fontFamily="@font/alice"
+                    android:text="Reception No.: +91 427 4099999"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size" />
 
-                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/text_margin"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/alice"
+                        android:text="click to call"
+                        android:textColor="#0FBC03"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/text_margin"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/alice"
+                        android:text="@string/link_to_college_website"
+                        android:textColor="#033FD6"
+                        android:textSize="@dimen/text_size"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/emailid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/text_margin"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/alice"
+                        android:textColor="#033FD6"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/alice"
+                    android:text="Direct Number: +91 427-4099(Ext.no)"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TableRow
+                            android:background="#FFEB3B"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/acme"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Name of the Staff"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/acme"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Ext.No."
+                                android:textColor="@color/black" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Dr.S.R.R.Senthil Kumar - PRINCIPAL"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="919"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:paddingLeft="10dp"
+                            android:text="ADMISSION"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:background="#FFEB3B"/>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Engineering"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="998 / 825"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="MBA"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="921"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="MCA"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="820"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="OVERSEAS ADMISSION"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="877 / 988"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:paddingLeft="10dp"
+                            android:text="ADMISTRATIVE OFFICE"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textColor="@color/black"
+                            android:background="#FFEB3B"
+                            android:textSize="18sp" />
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Mr.K.Ganesan - Finance Manager"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="903"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Mr.Lakshmi Narayanan &amp; Ms.V.Meenakshi(Accounts)"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="904 &amp; 908"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Ms.Deepa (Disbatch)"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="906"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Mr.Arun Kumar(purchase)"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="907"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Mr.V.Selvamuthu (Approvals Section)"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="12dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="900"
+                                android:textColor="@color/black" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#9E000000">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="click to see location"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/alice"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/img"
+
+                        />
+                </LinearLayout>
             </LinearLayout>
-
-
 
 
         </LinearLayout>

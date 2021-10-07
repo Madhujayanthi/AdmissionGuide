@@ -10,32 +10,452 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:text="@string/admiss"
-        android:textSize="22dp"
-        android:layout_margin="8dp"></TextView>
-
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/acme"
+        android:text="ADMISSION DETAILS"
+        android:textSize="22dp" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="20dp"
-        android:src="@drawable/sona_admiss"
-        >
-
-    </ImageView>
+        android:src="@drawable/sona_admiss" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:id="@+id/admission_text2"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:layout_margin="0dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ADD8E6"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <TableRow
+                        android:background="#FFEB3B"
+                        android:padding="5dp">
 
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Department"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/acme"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:text="No.of seats available (REGULAR/4 years)"
+                            android:fontFamily="@font/acme"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:text="No.of seats available (LATERAL/3 years)"
+                            android:fontFamily="@font/acme"
+                            android:textColor="@color/black"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="14dp"
+                            android:text="MECHANICAL ENGINEERING"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="150"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:text="18" />
+                    </TableRow>
+                    <TableRow
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="MECHATRONICS ENGINEERING"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="60"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+
+                    <TableRow
+
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="ELECTRICAL AND ELECTRONIC ENGINEERING"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="120"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+
+                    <TableRow
+
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="COMPUTER SCIENCE AND ENGINEERING"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:text="180" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="18"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+
+                    <TableRow
+
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="INFROMATION TECHNOLOGY"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="120"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+
+                    <TableRow
+
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="ELECTRONICS AND COMMUNICATION ENGINEERING"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="150"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="15"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+
+                    <TableRow
+
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="CIVIL ENGINEERING"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="90"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+
+                    <TableRow
+
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="FASHION TECHNOLOGY"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="60"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+
+                    <TableRow
+
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="BIO MEDICAL ENGINEERING"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="60"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+
+                    <TableRow
+
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="B.TECH-ARTIFICIAL INTELLIGENCE AND DATA SCIENCE"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="60"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/acme"
+                    android:text="Admission Criteria"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/admission_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/alice"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ADD8E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text=" FOR MORE DETAILS CONTACT:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/acme"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/admissiondet"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/alice"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
     </ScrollView>
+
 
 </LinearLayout>
