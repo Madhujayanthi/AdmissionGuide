@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
@@ -28,7 +28,8 @@
         android:fontFamily="sans-serif"
         android:textColor="@color/black"
         android:layout_marginLeft="10dp"
-        android:text="@string/https_www_sonatech_ac_in"
+        android:layout_marginBottom="6dp"
+        android:text="Sona College Of Technology"
         android:textSize="14sp" />
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

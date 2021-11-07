@@ -13,17 +13,11 @@
         android:layout_gravity="center_horizontal|center_vertical"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/acme"
-        android:text="ACADEMICS INFORMATION"
+        android:text="ACADEMIC INFORMATION"
         android:textColor="@color/black"
         android:textSize="28sp"
         android:textStyle="bold" />
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="178dp"
-        android:layout_margin="10dp"
-        android:layout_below="@+id/titleWindow"
-        android:src="@drawable/sona_academics" />
+
 
     <ScrollView
 
@@ -35,10 +29,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/titleWindow"
+                android:src="@drawable/sona_academics" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="ACADEMICS SHEDULE"
+                android:text="ACADEMIC SCHEDULE"
                 android:textColor="@color/black"
                 android:fontFamily="@font/acme"
                 android:textSize="22sp"
@@ -54,7 +55,8 @@
                 android:textSize="19sp"
                 android:fontFamily="@font/alice"
                 android:textColor="@color/black"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:justificationMode="inter_word"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -72,7 +74,8 @@
                 android:fontFamily="@font/acme"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:justificationMode="inter_word">
 
             </TextView>
             <TextView
@@ -83,135 +86,10 @@
                 android:textSize="19sp"
                 android:fontFamily="@font/alice"
                 android:textColor="@color/black"
-                android:layout_margin="5dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="ATTENDENCE AND LEAVE RULES "
-                android:textColor="@color/black"
-                android:fontFamily="@font/acme"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:justificationMode="inter_word"/>
 
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="ATTENDENCE "
-                android:textColor="@color/black"
-                android:fontFamily="@font/acme"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_margin="5dp">
 
-            </TextView>
-            <TextView
-                android:id="@+id/message3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/imageWindow"
-                android:textSize="19sp"
-                android:fontFamily="@font/alice"
-                android:textColor="@color/black"
-                android:layout_margin="5dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="LEAVE "
-                android:textColor="@color/black"
-                android:fontFamily="@font/acme"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_margin="5dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/message4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/imageWindow"
-                android:textSize="19sp"
-                android:fontFamily="@font/alice"
-                android:textColor="@color/black"
-                android:layout_margin="5dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HOLIDAYS "
-                android:textColor="@color/black"
-                android:fontFamily="@font/acme"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_margin="5dp">
-            </TextView>
-            <TextView
-                android:id="@+id/message5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/imageWindow"
-                android:textSize="19sp"
-                android:fontFamily="@font/alice"
-                android:textColor="@color/black"
-                android:layout_margin="5dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="ANTI-RAGGING "
-                android:textColor="@color/black"
-                android:fontFamily="@font/acme"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_margin="5dp">
-            </TextView>
-            <TextView
-                android:id="@+id/message6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/imageWindow"
-                android:textSize="19sp"
-                android:fontFamily="@font/alice"
-                android:textColor="@color/black"
-                android:layout_margin="5dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="WHAT CONSTITUTES RAGGING "
-                android:textColor="@color/black"
-                android:fontFamily="@font/acme"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_margin="5dp">
-            </TextView>
-            <TextView
-                android:id="@+id/message7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/imageWindow"
-                android:textSize="19sp"
-                android:fontFamily="@font/alice"
-                android:textColor="@color/black"
-                android:layout_margin="5dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="RAGGING PUNISHMENTS "
-                android:textColor="@color/black"
-                android:fontFamily="@font/acme"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_margin="5dp">
-            </TextView>
-
-            <TextView
-                android:id="@+id/message8"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/imageWindow"
-                android:textSize="19sp"
-                android:fontFamily="@font/alice"
-                android:textColor="@color/black"
-                android:layout_margin="5dp"/>
         </LinearLayout>
 
     </ScrollView>

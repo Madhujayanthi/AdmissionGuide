@@ -6,13 +6,43 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+
     <string name="about_college">Sona College of Technology (Autonomous) is a private college in India located in Salem, Tamilnadu, India. It was established in 1997 by Thiru. M.S. Chockalingam (Founder Chairman) and gained autonomous status in 2012. It is National Board of Accreditation (NBA) accredited, ISO certified and Accredited "A" Grade by National Assessment and Accreditation Council (NAAC). The college affiliated with Anna University and approved by the All India Council for Technical Education (AICTE) of the government of India</string>
     <string name="link_to_college_website"><a href="https://www.sonatech.ac.in/">website: www.sonatech.ac.in</a></string>
     <string name="link_to_alumni"><a href="https://www.sonatptalumni.org/">click to view more about alumni</a></string>
 
     <string name="text">COE INFORMATION</string>
+    <string-array name="Spinner_items">
+        <item>CSE</item>
+        <item>IT</item>
+        <item>MECH</item>
+        <item>MCT</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>FT</item>
+        <item>BME</item>
+
+    </string-array>
+    <string-array name="q1">
+        <item>Infrastructure</item>
+        <item>Education quality</item>
+        <item>Accomodation</item>
+        <item>Placement rate</item>
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="q2">
+        <item>Social Media</item>
+        <item>Relatives</item>
+        <item>Friends</item>
+        <item>Alumni</item>
+        <item>Others</item>
+    </string-array>
     <string name="admiss">ADMISSION DETAILS</string>
     <string name="admissiondet">
+
+
+
 
                 FOR MORE DETAILS CONTACT:
 
@@ -24,4 +54,17 @@
 
 
     </string>
+
+    <string name="adm_det"><a href="https://www.sonatech.ac.in/admission/">For more details click here!</a></string>
+    <string name="adm_mct"><a href="https://www.sonatech.ac.in/mechatronics/">For more details click here!</a></string>
+    <string name="adm_mech"><a href="https://www.sonatech.ac.in/mech/">For more details click here!</a></string>
+    <string name="adm_ft"><a href="https://www.sonatech.ac.in/ft/">For more details click here!</a></string>
+    <string name="adm_it"><a href="https://www.sonatech.ac.in/it/">For more details click here!</a></string>
+    <string name="adm_cse"><a href="https://www.sonatech.ac.in/cse/">For more details click here!</a></string>
+    <string name="adm_ece"><a href="https://www.sonatech.ac.in/ece/">For more details click here!</a></string>
+    <string name="adm_eee"><a href="https://www.sonatech.ac.in/eee/">For more details click here!</a></string>
+    <string name="adm_civil"><a href="https://www.sonatech.ac.in/civil/">For more details click here!</a></string>
+    <string name="adm_bme"><a href="https://www.sonatech.ac.in/bio-medical/">For more details click here!</a></string>
+
+
 </resources>

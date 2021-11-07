@@ -4,9 +4,259 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFEB3B"
     android:orientation="vertical"
     tools:context=".department">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:src="@drawable/sona1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/acme"
+                        android:text="Departments"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:columnCount="1"
+                android:rowCount="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:id="@+id/mechanical"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alice"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Mechanical"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:id="@+id/MCT"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alice"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Mechatronics"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:id="@+id/EEE"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alice"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Electrical &amp; Electronics"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/biomedical"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alice"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Bio Medical"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:id="@+id/ECE"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="30dp">
 
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alice"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Electronics &amp; Communication"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:id="@+id/civil"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alice"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Civil"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:id="@+id/cse"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alice"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Computer Science"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:id="@+id/info"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alice"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Information Technology"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:id="@+id/fashion"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alice"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Fashion Technology"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>

@@ -13,7 +13,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/acme"
                 android:text="PLACEMENT INFORMATION"
@@ -21,11 +21,7 @@
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="230dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/placement_sona"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -33,6 +29,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/placement_sona"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -46,7 +48,11 @@
                 android:textStyle="bold">
 
             </TextView>
-
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/placement3"/>
 
             <TextView
                 android:id="@+id/placement_2"
@@ -70,6 +76,16 @@
                 android:textStyle="bold">
 
             </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/placement1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/placement2"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -77,7 +93,8 @@
                 android:layout_margin="5dp"
                 android:fontFamily="@font/alice"
                 android:textColor="@color/black"
-                android:textSize="19sp">
+                android:textSize="19sp"
+                android:justificationMode="inter_word">
 
             </TextView>
         </LinearLayout>

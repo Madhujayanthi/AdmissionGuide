@@ -23,16 +23,7 @@ public class placement extends AppCompatActivity {
                 + "\n" +
                 "The Placement & Training cell goes all out to train the students to meet the high industry expectations.\n" +
                 "\n" +
-                "OBJECTIVES\n" +
-                "\n" +
-                "The objectives of Placement & Training cell are manifold. They include:\n" +
-                "\n" +
-                "1) Developing the students Technical knowledge and soft skills to meet the corporate recruitment process.\n" +
-                "2) To motivate students to develop their overall personality in terms of career planning, goal setting and reskilling which will stand them in good stead even after getting the job.\n" +
-                "3) To motivate students aspire for higher studies and guiding them to take competitive exams such as CAT, GATE, TOEFL, GRE, GMAT AND IELTS.\n" +
-                "4) Aiming to Place the maximum number of students through campus & off-campus interviews conducted by the top notch companies.\n" +
-                "\n"
-                + "\n" +
+                 "\n" +
                 "CONTACT\n" +
                 "\n" +
                 "Dr.B.Saravanan (Engineering)\n" +

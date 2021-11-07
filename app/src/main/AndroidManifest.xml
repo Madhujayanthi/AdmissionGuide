@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.admissionguide">
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,18 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AdmissionGuide">
-        <activity android:name=".login"></activity>
-        <activity android:name=".contact" />
+        <activity android:name=".infrastructure"></activity>
+        <activity android:name=".loginActivity" />
+        <activity android:name=".fashion" />
+        <activity android:name=".Info" />
+        <activity android:name=".cse" />
+        <activity android:name=".civil" />
+        <activity android:name=".biomedical" />
+        <activity android:name=".ECE" />
+        <activity android:name=".EEE" />
+        <activity android:name=".MCT" />
+        <activity android:name=".mechanical" />
         <activity android:name=".facilities" />
-        <activity android:name=".research" />
-        <activity android:name=".sports" />
-        <activity android:name=".library" />
         <activity android:name=".alumni" />
         <activity android:name=".placement" />
-        <activity android:name=".coe" />
         <activity android:name=".admission" />
         <activity android:name=".academics" />
-        <activity android:name=".accomodations" />
         <activity android:name=".about" />
         <activity android:name=".department" />
         <activity android:name=".navigation" />

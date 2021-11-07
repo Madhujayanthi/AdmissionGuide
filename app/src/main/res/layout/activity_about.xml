@@ -40,7 +40,8 @@
                 android:textColor="@color/black"
                 android:fontFamily="@font/alice"
                 android:layout_margin="10dp"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:justificationMode="inter_word"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

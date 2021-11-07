@@ -13,7 +13,6 @@ import android.Manifest;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -24,8 +23,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
@@ -82,6 +83,7 @@ public class navigation extends AppCompatActivity implements NavigationView.OnNa
         sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
         sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
         sliderView.startAutoCycle();
+
 
         //starting code for map
         map= findViewById(R.id.map);
@@ -180,10 +182,7 @@ public class navigation extends AppCompatActivity implements NavigationView.OnNa
                 Intent  department = new Intent(navigation.this, department.class);
                 startActivity(department);
                 break;
-            case R.id.accomodations:
-                Intent accomodations = new Intent(navigation.this, accomodations.class);
-                startActivity(accomodations);
-                break;
+
             case R.id.academics:
                 Intent academics = new Intent(navigation.this,academics.class);
                 startActivity(academics);
@@ -193,42 +192,32 @@ public class navigation extends AppCompatActivity implements NavigationView.OnNa
                 Intent admission= new Intent(navigation.this, admission.class);
                 startActivity(admission);
                 break;
-            case R.id.coe:
-                Intent coe = new Intent(navigation.this, coe.class);
-                startActivity(coe);
-                break;
+
             case R.id.placement:
                 Intent placement = new Intent(navigation.this, placement.class);
                 startActivity(placement);
                 break;
+            case R.id.infrastructure:
+                Intent  infrastructure = new Intent(navigation.this,infrastructure.class);
+                startActivity(infrastructure);
+                break;
+
             case R.id.alumni:
                 Intent alumni = new Intent(navigation.this, alumni.class);
                 startActivity(alumni);
                 break;
-            case R.id.library:
-                Intent library = new Intent(navigation.this, library.class);
-                startActivity(library);
+
+
+
+
+            case  R.id.share:
+                Intent share = new Intent(Intent.ACTION_SEND);
+                share.setType("text/plain");
+                share.putExtra(Intent.EXTRA_TEXT,"https://drive.google.com/drive/folders/1fVveyJRjUpK779lu7EKx3uqRy__7x-wd?usp=sharing");
+                startActivity(Intent.createChooser(share,"share"));
                 break;
-            case R.id.sports:
-                Intent sports= new Intent(navigation.this, sports.class);
-                startActivity(sports);
-                break;
-            case R.id.research:
-                Intent research = new Intent(navigation.this, research.class);
-                startActivity(research);
-                break;
-            case R.id.facilities:
-                Intent facilities = new Intent(navigation.this, facilities.class);
-                startActivity(facilities);
-                break;
-            case R.id.contact:
-                Intent contact = new Intent(navigation.this, contact.class);
-                startActivity(contact);
-                break;
-            case R.id.login:
-                Intent login = new Intent(navigation.this, login.class);
-                startActivity(login);
-                break;
+
+
 
         }
 
