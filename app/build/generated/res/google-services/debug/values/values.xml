@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1004736494875-hokphl5e1g713jf28md2rtk32s0uon3c.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1004736494875</string>
+    <string name="google_api_key" translatable="false">AIzaSyAKxARv3BNlO_MHNiGMyHQxMstGGR0CFLE</string>
+    <string name="google_app_id" translatable="false">1:1004736494875:android:7e3e6e905c4eaeb9ac67be</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAKxARv3BNlO_MHNiGMyHQxMstGGR0CFLE</string>
+    <string name="google_storage_bucket" translatable="false">admissionguide-d12cd.appspot.com</string>
+    <string name="project_id" translatable="false">admissionguide-d12cd</string>
+</resources>
