@@ -62,7 +62,8 @@ public class loginActivity extends AppCompatActivity implements AdapterView.OnIt
                 }
                 else{
                     fullname.setError(null);
-                    return true;
+                    return true
+                            ;
                 }
             }
             private Boolean validateEmail(){
